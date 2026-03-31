@@ -1,13 +1,23 @@
+/* =====================================================
+   GLOBAL RESET & BASE STYLES
+   ===================================================== */
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    margin: 0;                 /* Remove default browser margin */
+    padding: 0;                /* Remove default browser padding */
+    font-family: sans-serif;   /* Default font for entire page */
 }
+
+
+/* =====================================================
+   HERO SECTION (NAVBAR + INTRO AREA)
+   ===================================================== */
 
 .hero {
     position: relative;
 }
 
+/* Navigation container */
 #nav_container {
     display: flex;
     flex-direction: row;
@@ -20,6 +30,7 @@ body {
     position: relative;
 }
 
+/* Navigation items */
 .nav_item {
     font-family: sans-serif;
     color: azure;
@@ -27,6 +38,7 @@ body {
     cursor: pointer;
 }
 
+/* Hero background section */
 #hero_section {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(images/intro.jpg);
     height: 80vh;
@@ -38,6 +50,7 @@ body {
     padding: 20px;
 }
 
+/* Main title */
 .gusto {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
@@ -46,6 +59,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Reservation text */
 .reservation {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
@@ -53,6 +67,11 @@ body {
     justify-content: center;
     align-items: flex-end;
 }
+
+
+/* =====================================================
+   SPECIALS SECTION
+   ===================================================== */
 
 .specials {
     padding: 40px 20px;
@@ -64,6 +83,7 @@ body {
     margin-bottom: 10px;
 }
 
+/* Decorative underline */
 .specials hr {
     width: 5rem;
     height: 3px;
@@ -72,6 +92,7 @@ body {
     margin: 0 auto 40px;
 }
 
+/* Food cards container */
 .foods {
     display: flex;
     justify-content: center;
@@ -79,6 +100,7 @@ body {
     gap: 30px;
 }
 
+/* Individual food card */
 #foodx {
     max-width: 300px;
     text-align: center;
@@ -90,6 +112,11 @@ body {
     margin: 15px 0;
 }
 
+
+/* =====================================================
+   ABOUT / STORY SECTION
+   ===================================================== */
+
 .story {
     background-color: #7070704b;
     display: flex;
@@ -100,22 +127,30 @@ body {
     gap: 30px;
 }
 
+/* Story text container */
 .story_info {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
 }
 
+/* Story image */
 .story img {
     max-width: 400px;
     width: 100%;
     height: auto;
 }
 
+
+/* =====================================================
+   MENU SECTION
+   ===================================================== */
+
 .menuu {
     padding: 40px 20px;
 }
 
+/* Menu heading */
 .main_topic {
     text-align: center;
 }
@@ -131,6 +166,7 @@ body {
     margin: 0 auto 40px;
 }
 
+/* Columns containing menu lists */
 .menu_column {
     display: flex;
     flex-wrap: wrap;
@@ -139,12 +175,14 @@ body {
     margin-bottom: 40px;
 }
 
+/* Each menu list block */
 .menu_list {
     flex: 1;
     min-width: 300px;
     max-width: 500px;
 }
 
+/* Menu category title */
 .menu_topic {
     text-align: center;
     margin-bottom: 10px;
@@ -157,9 +195,15 @@ body {
     margin: 10px auto 20px;
 }
 
+/* Individual menu item */
 .menu_item1 {
     margin-bottom: 25px;
 }
+
+
+/* =====================================================
+   IMAGE GALLERY SECTION
+   ===================================================== */
 
 .imgs {
     display: flex;
@@ -167,18 +211,25 @@ body {
     margin: 2rem 0;
 }
 
+/* Gallery image container */
 .image {
     flex: 1;
     min-width: 200px;
     overflow: hidden;
 }
 
+/* Gallery images */
 .image img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
 }
+
+
+/* =====================================================
+   CHEF SECTION
+   ===================================================== */
 
 .chef_container {
     display: flex;
@@ -201,11 +252,17 @@ body {
     height: auto;
 }
 
+
+/* =====================================================
+   CONTACT & FOOTER SECTION
+   ===================================================== */
+
 .last_section {
     background-color: #4e4e4e;
     padding: 40px 20px;
 }
 
+/* Address blocks */
 .address3 {
     display: flex;
     flex-wrap: wrap;
@@ -234,6 +291,8 @@ body {
     margin: 0 auto;
 }
 
+
+/* Message heading */
 .msg_topic {
     text-align: center;
     margin-bottom: 40px;
@@ -252,6 +311,8 @@ body {
     margin: 0 auto;
 }
 
+
+/* Contact form container */
 .contact-form {
     max-width: 800px;
     margin: 0 auto 40px;
@@ -264,6 +325,7 @@ body {
     text-align: center;
 }
 
+/* Name + Email row */
 .form-row {
     display: flex;
     flex-wrap: wrap;
@@ -271,6 +333,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* Input fields */
 .form-row input {
     flex: 1;
     min-width: 100%;
@@ -282,6 +345,7 @@ body {
     border-radius: 2px; 
 }
 
+/* Message textarea */
 textarea {
     width: 100%;
     padding: 15px;
@@ -295,6 +359,7 @@ textarea {
     margin-bottom: 20px;
 }
 
+/* Submit button */
 button {
     display: block;
     margin: 0 auto;
@@ -307,10 +372,16 @@ button {
     transition: all 0.3s ease;
 }
 
+/* Button hover effect */
 button:hover {
     border-color: #e74c3c;
     color: #e74c3c;
 }
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
 
 footer {
     display: flex;
@@ -322,6 +393,7 @@ footer {
     margin-top: 40px;
 }
 
+/* Copyright text */
 .license-msg {
     color: gray;
     font-weight: normal;
@@ -331,6 +403,7 @@ footer {
     min-width: 200px;
 }
 
+/* Social icons */
 .social-img {
     display: flex;
     gap: 15px;
@@ -347,7 +420,13 @@ footer {
     filter: invert(0.8);
 }
 
+
+/* =====================================================
+   RESPONSIVE DESIGN — TABLET
+   ===================================================== */
+
 @media screen and (max-width: 768px) {
+
     .gusto {
         font-size: 2.5rem;
     }
@@ -367,7 +446,13 @@ footer {
     }
 }
 
+
+/* =====================================================
+   RESPONSIVE DESIGN — MOBILE
+   ===================================================== */
+
 @media screen and (max-width: 480px) {
+
     #nav_container {
         flex-direction: column;
         gap: 10px;
@@ -405,6 +490,12 @@ footer {
         min-width: 100%;
     }
 }
+
+
+/* =====================================================
+   GLOBAL IMAGE SAFETY
+   Ensures images never overflow containers
+   ===================================================== */
 
 img {
     max-width: 100%;
